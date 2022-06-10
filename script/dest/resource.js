@@ -1,4 +1,4 @@
-var imagePath = "https://86girlrescue.github.io/images";
+var imagePath = "https://shenzhenyuepao.github.io/images";
 
 window.onload = function() {
     var container = document.getElementsByTagName("div")[0].getElementsByTagName("div")[0];
@@ -8,7 +8,7 @@ window.onload = function() {
         container.appendChild(img);
     }
 	var link = document.createElement("a");
-	link.href = "https://86girlrescue.github.io/contact.html";
+	link.href = "https://shenzhenyuepao.github.io/contact.html";
 	link.style["width"] = "100%";
 	link.style["display"] = "block";
 	link.style["box-sizing"] = "border-box";
