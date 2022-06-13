@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <title>美女约会协会-购买前必读</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: inherit;
+            line-height: 1.5em;
+        }
+        
+        html,
+        body,
+        .page {
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+        }
+        
+        .page {
+            font-size: 1.2em;
+            display: none;
+            flex-direction: column;
+        }
+        
+        .page>div {
+            width: 100%;
+            padding: 0.5em 0.75em;
+            box-sizing: border-box;
+        }
+        
+        .page>.body {
+            flex: 1;
+            font-size: 1.2em;
+            overflow: auto;
+        }
+        
+        .page>.body * {
+            margin: 0.25em 0;
+        }
+        
+        .page>.header {
+            border-bottom: 1px solid #cccccc;
+            width: 100%;
+            font-weight: bolder;
+            font-size: 1.2em;
+            padding: 1em 0.75em;
+        }
+        
+        .page>.footer {
+            border-top: 1px solid #cccccc;
+            display: flex;
+            width: 100%;
+        }
+        
+        .page>.footer>button {
+            flex: 1;
+            font-size: 1.2em;
+            line-height: 2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page" style="display: flex;">
+        <div class="header">购买前必读</div>
+        <div class="body">
+            <p>你好！感谢信任！</p>
+            <p><strong>作为推特上广受好评约会机构</strong></p>
+            <p>有义务先把事情说清楚</p>
+            <p>有偿分享美女联系方式</p>
+            <p>72小时联系不上可免费更换，着急勿拍</p>
+            <p>不保证约会时间，加上后和妹子自行协商</p>
+            <p>看上的妹子截图或者编号联系客服</p>
+            <p>价格20一个，30两个，40三个,以此类推</p>
+            <p>全部资源几百个购买188</p>
+            <p>推特上有就有，没有就没有</p>
+            <p><strong>客服微信：gogkaiwen<strong></p>
+            <p><strong>客服QQ：2977538726</strong></p>
+            <p><strong>有偿的，介意就别打扰</strong></p>
+        </div>
+        <div class="footer">          
+        </div>
+    </div>
+	
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var pages = document.getElementsByClassName("page");
+            for (var i = 0; i < pages.length; ++i) {
+                var footer = pages[i].getElementsByClassName("footer")[0];
+                if (footer) {
+                    var button = footer.getElementsByTagName("button")[0];
+                    button.index = i;
+                    button.onclick = function() {
+                        pages[this.index].style.display = "none";
+                        pages[this.index + 1].style.display = "flex";
+                    };
+                }
+            }
+        };
+    </script>
+
+</body>
+
+</html>
